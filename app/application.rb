@@ -1,4 +1,3 @@
-require 'pry'
 class Application 
   @@items = [Item.new("apples", 2.35), Item.new("flour", 3.15), Item.new("milk", 2.20)]
   def call(env) 
