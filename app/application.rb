@@ -1,7 +1,7 @@
 class Application 
   @@items = [Item.new("apples", 2.35), Item.new("flour", 3.15), Item.new("milk", 2.20)]
   def call(env) 
-    resp = Rack::Response.new 
+    resp = Rack::Response.new
     req = Rack::Request.new(env)
     
     if req.path.match(/items/)
